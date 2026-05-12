@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.left-panel {
+  flex: 1;
+  background: #fff;
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-panel {
+  flex: 1;
+  background: #b33927;
+  padding: 40px;
+  color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.search-bar input {
+  background: #f2f2f2;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.top-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.sidebar-text {
+  position: absolute;
+  left: 190px;
+  bottom: 200px;
+  transform: rotate(-90deg);
+  transform-origin: left;
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  color: #2c3e50;
+}
+
+.list_container {
+  height: 60%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+.classification-list {
+  margin-top: 90px;
+  max-width: 150px;
+}
+
+.item {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.item span {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: large;
+  color: black;
+}
+
+.item p {
+  font-size: large;
+  margin-top: 10px;
+  color: grey;
+}
+
+.container_right {
+  width: 100%;
+  height: 80%;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  height: 100%;
+
+  margin-top: 80px;
+  padding-left: 20px;
+}
+
+.cockroach_name {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.insect_details {
+  display: flex;
+  align-items: center;
+}
+
+.insect_img {
+  border-right: 1px solid white;
+}
+
+.insect_img img {
+  height: 60px;
+  padding-right: 10px;
+}
+
+.p_info {
+  margin-left: 5px;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 20px 0;
+  color: #d4b88a;
+}
+
+.btn {
+  background: #d4b88a;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.insect-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.insect-display img {
+  height: 75vh;
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.5));
+}
+
+.switch {
+  display: block;
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #f2dab4;
+}
