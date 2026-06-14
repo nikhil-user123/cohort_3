@@ -8,6 +8,11 @@
   src: url(./fonts/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2);
 }
 
+@font-face {
+  font-family: midnight;
+  src: url(./fonts/midnight-sans-rd-12-medium-trial.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -79,7 +84,8 @@ nav .nav-part-2 {
 }
 
 .nav-part-3 svg {
-  width: 10vw;
+  width: 30px;
+  height: 30px;
 }
 
 #section-1 {
@@ -94,22 +100,21 @@ nav .nav-part-2 {
   align-items: center;
   padding: 3rem 0.5rem;
   gap: 1rem;
+  text-align: center;
 }
 
 #section-1 h1 {
   font-size: clamp(3rem, 3.8rem, 4rem);
-  /* max-width: 17vw; */
+  /* max-width: 18vw; */
   font-weight: 500;
   color: white;
-  text-align: center;
 }
 
 #section-1 p {
   font-family: figtree;
   font-size: clamp(1.2rem, 1rem, 1rem);
   font-weight: 300;
-  text-align: center;
-  /* width: 25vw; */
+
   color: white;
 }
 
@@ -122,6 +127,39 @@ nav .nav-part-2 {
   border-radius: 2rem;
   font-family: figtree;
   font-size: 1.1rem;
+}
+
+#section-2 {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 1rem;
+}
+
+#section-2 .section-2-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: reckless;
+}
+
+.section-2-text h1 {
+  font-size: clamp(1.8rem, 5vw, 4rem);
+  font-weight: 300;
+  width: 80%;
+}
+
+#section-2 > button {
+  padding: 0.1rem 0.5rem;
+  font-size: 3rem;
+  background-color: #daaeea;
+  font-family: midnight;
+  border-radius: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 5rem;
+  rotate: -5deg;
 }
 
 @media (min-width: 1024px) {
@@ -161,23 +199,22 @@ nav .nav-part-2 {
 
   #section-1 {
     width: 100%;
-    height: 85vh;
-    background-image: url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry_mobile.webp?v=1774284087&width=720);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    /* align-items: center; */
-    padding: 3rem 0.5rem;
+    align-items: start;
+    text-align: start;
+    padding: 3rem 2rem;
+    background-image: url(//www.twoleavestea.com/cdn/shop/files/AlpineBerry.webp?v=1774284276&width=1280);
     gap: 1rem;
   }
 
   #section-1 h1 {
-    font-size: clamp(3rem, 3.8rem, 4rem);
-    /* max-width: 17vw; */
-    font-weight: 500;
-    color: white;
-    text-align: start;
+    max-width: 18vw;
+  }
+  #section-1 p {
+    width: 30%;
+  }
+
+  #section-1 button {
+    width: fit-content;
+    padding: 1rem 4rem;
   }
 }
