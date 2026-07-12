@@ -41,6 +41,7 @@ nav {
   left: 10px;
   right: 10px;
   top: 1vw;
+  z-index: 1;
 }
 
 nav i {
@@ -162,6 +163,514 @@ nav .nav-part-2 {
   rotate: -5deg;
 }
 
+#section-2 .card-container {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: fit-content;
+  flex-shrink: 0;
+  /* margin-left: 10px; */
+}
+.card-top {
+  width: 80%;
+  height: 35vh;
+  background-color: #c1ee91;
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+  border-radius: 1rem;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+.card-top-text {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.card-top-text button {
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.2rem;
+  border: 1px solid #000;
+  background-color: #fff;
+  font-family: Midnight;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  display: block;
+
+  font-weight: 400;
+}
+.card-top-text span {
+  font-size: 1.2rem;
+  font-family: Reckless;
+}
+.card-top img {
+  height: 90%;
+  width: 90%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  transition: all ease 0.3s;
+}
+
+.card-btm-text {
+  background-color: #fff;
+  padding: 0.6rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3rem;
+  font-family: Reckless;
+  font-size: 1.2rem;
+}
+
+.card-top:hover img {
+  scale: 1.1;
+}
+
+.card-btm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-family: Reckless;
+  align-items: start;
+}
+
+.card-btm h1 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.card-btm h3 {
+  font-family: 0.3rem;
+  font-weight: 100;
+}
+.card-btm p {
+  font-weight: 100;
+  opacity: 0.5;
+  width: 90%;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btm-btn {
+  padding: 1.2rem;
+  border: none;
+  background-color: #2a2857;
+  color: white;
+  font-family: Figtree;
+  border-radius: 1.2rem;
+  font-size: 1.1rem;
+}
+
+.explor-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  border-bottom: 3px solid black;
+}
+
+.explor-button button {
+  width: 80%;
+  padding: 1.1rem;
+  border: none;
+  background-color: #2a2857;
+  color: white;
+  border-radius: 2rem;
+  font-family: figtree;
+  font-size: 1.2rem;
+}
+
+#section-3 {
+  height: 100vh;
+  padding: 2rem 1rem;
+}
+
+#section-3 .Discover-container .s3-btn {
+  padding: 0 0.2rem;
+  font-size: 2.5rem;
+  background-color: #ff7f31;
+  font-family: midnight;
+  border-radius: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 5rem;
+  rotate: -4deg;
+}
+
+#section-3 h6 {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 100;
+  font-family: reckless;
+}
+
+.search input {
+  margin: 1.5rem 0;
+  height: 20vw;
+  padding: 2rem;
+  width: 100%;
+  border-radius: 20px;
+  font-weight: 200;
+  font-family: reckless;
+  font-size: 1.5rem;
+  border: 1px solid rgb(76, 74, 74);
+}
+#section-3 p {
+  font-size: 0.8rem;
+  color: grey;
+  font-family: figtree;
+  text-transform: uppercase;
+}
+
+.category-section {
+  margin-top: 5px;
+  padding: 3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category {
+  font-family: reckless;
+  padding: 0.3rem 1.6rem;
+  font-weight: 300;
+  font-size: 2rem;
+  background-color: #daeaff;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.section-4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100vh;
+  padding: 2rem;
+  background-image: url("https://www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=900");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-4 .section-4-btn {
+  padding: 0.1rem 1rem;
+  background-color: #a2c9fc;
+  border: 1px solid black;
+  font-size: 2rem;
+  font-family: midnight;
+  border-radius: 10px;
+  rotate: -3deg;
+}
+
+.section-4 p {
+  color: white;
+  text-align: center;
+  font-family: reckless;
+  font-size: clamp(1rem, 2rem, 1.6rem);
+}
+
+.section-4 h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: white;
+  letter-spacing: 2;
+  font-family: midnight;
+}
+
+.sec-4-btn2 {
+  background-color: white;
+  padding: 0.8rem 3rem;
+  font-size: 1rem;
+  font-family: figtree;
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid black;
+}
+
+.Reviews-section {
+  padding: 2rem;
+}
+
+.reviews-container p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-family: reckless;
+}
+
+.Reviews-btn {
+  padding: 0 0.1rem;
+  background-color: #73bc25;
+  border: 1px solid black;
+  font-size: 2.5rem;
+
+  flex-direction: column;
+  font-family: midnight;
+  border-radius: 10px;
+  rotate: -3deg;
+}
+
+.card-section {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+.card-section::-webkit-scrollbar {
+  display: none;
+}
+
+.review-card {
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  width: fit-content;
+  flex-shrink: 0;
+  padding: 15px;
+  margin-left: 5px;
+  background-color: var(--background);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.quote {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.quote h2 {
+  font-family: reckless;
+  font-weight: 200;
+  font-size: clamp(1.4rem, 1.4rem, 2rem);
+  text-align: center;
+}
+
+.quote p {
+  font-family: figtree;
+  opacity: 0.5;
+}
+
+.card-bottom {
+  padding: 0 0.5rem;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: var(--bottom-backgroud);
+  /* background-color: #ea6d44; */
+}
+
+.img {
+  padding: 0.6rem;
+  border-right: 1px solid black;
+}
+
+.card-bottom img {
+  height: 60px;
+}
+
+.title {
+  display: flex;
+  gap: 15px;
+}
+
+.title p {
+  font-family: figtree;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 500;
+}
+
+.title button {
+  border-radius: 40px;
+  border: none;
+  font-size: 1rem;
+  padding: 0.1rem 1.1rem;
+  border: 1px solid black;
+}
+
+.footer-container {
+  background-color: #c0dbff;
+}
+
+.newsletter-section {
+  padding: 1.5rem;
+}
+
+.newsletter-left {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.newsletter-left h2 {
+  font-family: midnight;
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+.newsletter-left p {
+  font-family: reckless;
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: #161616;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.subscribe-form input {
+  height: 3rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 100;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.subscribe-form button {
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(42 40 87);
+  color: white;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+.social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1.5px solid #27244e;
+  border-radius: 50%;
+  color: #27244e;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+}
+
+.links-card {
+  background-color: #2a2653;
+  border-radius: 12px;
+  margin: 0 1.4rem;
+}
+
+.links-container {
+  width: 100%;
+  padding: 0 0 1rem 0;
+}
+
+.link-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-column ul {
+  display: none;
+}
+
+.link-column h3 {
+  width: 90%;
+  font-family: reckless;
+  font-size: 2rem;
+  font-weight: 100;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 0.5px solid #c0dbffac;
+}
+
+.down-ar {
+  width: 25px;
+  height: 25px;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  background-color: #c0dbff;
+  color: rgb(42 40 87);
+}
+
+.copyright-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  width: 100%;
+  height: 50vh;
+  background-image: url("https://www.twoleavestea.com/cdn/shop/files/footer-extended_1.png?v=1771834074");
+  background-position: center;
+  background-size: 600vw 30vh;
+  background-repeat: no-repeat;
+}
+
+.copyright-sec img {
+  width: 70%;
+}
+
+.copyright-sec p {
+  text-align: center;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  color: #373333;
+  font-size: medium;
+}
+
+/* media queries */
+
 @media (min-width: 1024px) {
   nav i {
     display: none;
@@ -216,5 +725,243 @@ nav .nav-part-2 {
   #section-1 button {
     width: fit-content;
     padding: 1rem 4rem;
+  }
+
+  #section-2 .btn-1 {
+    display: none;
+  }
+
+  #section-2 > button {
+    margin-left: 30rem;
+  }
+
+  .section2-text h1 {
+    width: 50%;
+  }
+
+  #section-2 .card-container {
+    width: 80%;
+    padding: 5rem 10rem;
+  }
+
+  .Reviews-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .explor-button button {
+    width: fit-content;
+  }
+
+  #section-3 {
+    height: 90vh;
+    padding: 0 20rem;
+  }
+
+  .Discover-container {
+    padding-top: 4rem;
+    width: min(1200px, 90%);
+    margin: auto;
+  }
+
+  #section-3 h6 {
+    margin-top: 3rem;
+    font-weight: 200;
+    font-size: 4rem;
+  }
+
+  .category-section {
+    margin-top: 5rem;
+  }
+
+  #section-3 .search input {
+    height: 4vw;
+    width: 40%;
+  }
+
+  .section-4 .section-4-btn {
+    font-size: 4rem;
+  }
+
+  .section-4 p {
+    width: 60%;
+    font-size: clamp(1rem, 2rem, 8rem);
+  }
+
+  .section-4 h1 {
+    font-size: 8rem;
+  }
+
+  .sec-4-btn2 {
+    width: fit-content;
+  }
+
+  .quote h2 {
+    font-size: 1.5rem;
+  }
+
+  #section-3 .s3-btn {
+    padding: 0 0.2rem;
+  }
+
+  .reviews-container {
+    width: 50%;
+  }
+
+  .reviews-container p {
+    margin-top: 4rem;
+    font-size: 3rem;
+    font-family: reckless;
+  }
+
+  .review-card {
+    max-width: 300px;
+  }
+
+  .card-section {
+    width: 70%;
+    overflow-x: auto;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+    background-color: #c0dbff;
+  }
+
+  .newsletter-section {
+    margin-left: 30rem;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 40px 40px 60px 40px;
+  }
+
+  .newsletter-left h2 {
+    font-family: midnight;
+    font-weight: 500;
+    font-size: 2.4rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+
+  .newsletter-left p {
+    font-family: reckless;
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: #434069;
+    margin-bottom: 24px;
+  }
+
+  .subscribe-form {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .subscribe-form input {
+    width: 320px;
+    padding: 14px 20px;
+    border: 1px solid #27244e;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    background-color: #ffffff;
+  }
+
+  .subscribe-form button {
+    background-color: #2a2653;
+    color: #ffffff;
+    width: fit-content;
+    border: none;
+    border-radius: 25px;
+    padding: 0 32px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .subscribe-form button:hover {
+    background-color: #1e1b3d;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+
+  .links-card {
+    height: fit-content;
+    margin: 0 8rem;
+    background-color: #2a2653;
+    border-radius: 12px;
+    padding: 60px 6rem 30px 6rem;
+  }
+
+  .links-container {
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+  }
+
+  .link-column h3 {
+    font-family: reckless;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 18px;
+  }
+
+  .link-column ul {
+    display: block;
+    list-style: none;
+  }
+
+  .down-ar {
+    display: none;
+  }
+
+  .link-column ul li {
+    margin-bottom: 8px;
+  }
+
+  .link-column ul li a {
+    color: #a4a2c1;
+    font-family: figtree;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .link-column ul li a:hover {
+    color: #ffffff;
+  }
+
+  .copyright-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 0;
+    width: 100%;
+    height: 70vh;
+    background-image: url("https://www.twoleavestea.com/cdn/shop/files/footer-extended_1.png?v=1771834074");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .copyright-sec img {
+    width: 20%;
   }
 }

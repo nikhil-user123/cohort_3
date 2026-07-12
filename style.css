@@ -19,7 +19,7 @@ main {
 }
 
 .card {
-  height: 300px;
+  /* height: 300px; */
   width: 500px;
   padding: 30px 40px;
   display: flex;
@@ -48,7 +48,7 @@ main {
   border-radius: 20px;
 }
 
-.card a:nth-of-type(5) {
+.card a:nth-of-type(6) {
   font-size: 16px;
   background-color: lightgreen;
   color: darkgreen;
