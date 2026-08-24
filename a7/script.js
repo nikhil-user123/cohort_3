@@ -12,6 +12,38 @@ const completedCount = document.querySelector("#completedCount");
 const searchBar = document.querySelector("#searchBar");
 const filterCategory = document.querySelector("#filterCategory");
 
+const gp = document.querySelector("#grandparent");
+const parent = document.querySelector("#parent");
+const child = document.querySelector("#child");
+
+const taskTitleInput = document.querySelector("#taskTitle");
+const propValDisplay = document.querySelector("#propVal");
+const attrValDisplay = document.querySelector("#attrVal");
+
+function liveTracker() {
+  propValDisplay.textContent = `"${taskTitleInput.value}"`;
+  attrValDisplay.textContent = `"${taskTitleInput.getAttribute("value")}"`;
+}
+
+taskTitleInput.addEventListener("input", liveTracker);
+liveTracker();
+
+gp.addEventListener(
+  "click",
+  () => console.log("CAPTURING Phase: Grandparent Called"),
+  true,
+);
+parent.addEventListener(
+  "click",
+  () => console.log("CAPTURING Phase: Parent Called"),
+  true,
+);
+child.addEventListener(
+  "click",
+  () => console.log("CAPTURING Phase: Child Target Called"),
+  true,
+);
+
 let tasks = JSON.parse(localStorage.getItem("dom_tasks")) || [];
 
 function Ui() {
@@ -98,6 +130,8 @@ taskForm.addEventListener("submit", (e) => {
   Ui();
 
   taskTitle.value = "";
+  taskTitle.setAttribute("value", "");
+  liveTracker();
 });
 
 taskListContainer.addEventListener("click", (e) => {

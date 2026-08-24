@@ -182,8 +182,23 @@ p {
   display: flex;
   vertical-align: top;
   flex-direction: column;
+  max-height: 600px;
   gap: 1rem;
-  min-height: 100px;
+  padding-right: 0.5rem;
+  overflow-y: auto;
+}
+
+.task-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.task-list::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+.task-list::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
 }
 
 .task-card {
