@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>TaskMaster</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h1>TaskManager</h1>
+        <button id="themeToggle" class="thm-btn" data-current-theme="light">
+          <i class="ri-sun-line"></i>
+        </button>
+      </nav>
+
+      <div>
+        <div class="card">
+          <h2>Create Task</h2>
+          <form id="taskForm">
+            <div style="margin-top: 1rem">
+              <label for="taskTitle">Task</label>
+              <input
+                type="text"
+                id="taskTitle"
+                value="Initial attribute value"
+                required
+              />
+            </div>
+            <div style="margin: 1rem 0">
+              <label for="Category">Category</label>
+              <select name="" id="Category">
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Urgent">Urgent</option>
+              </select>
+            </div>
+            <button type="submit" class="task-btn">Add Task</button>
+          </form>
+
+          <div class="container2">
+            <strong>Live Attribute vs Property tracker:</strong>
+            <div id="trackerdemo">
+              input.value:
+              <span id="propVal" style="color: var(--accent-color)">hii</span
+              ><br />input.getAttribute('value'):<span
+                id="attrVal"
+                style="color: var(--yellow-color)"
+                >hh</span
+              >
+            </div>
+          </div>
+
+          <div class="card" style="margin-top: 1.5rem">
+            <h2>Event Propagation</h2>
+            <p>
+              Click the child button to trigger simultaneous Capturing and
+              Bubbling verification loops in the console window.
+            </p>
+            <div id="grandparent" class="prop-box">
+              <strong>Grandparent Box</strong>
+              <div id="parent" class="prop-box">
+                <strong>Parent Box</strong>
+                <br /><br />
+                <button id="child">Click Child Button</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card">
+          <h2>Task Board</h2>
+
+          <div class="stats-bar" style="margin-top: 1rem">
+            <span class="stat-badge"
+              >Pending: <span id="pendingCount">0</span></span
+            >
+            <span class="stat-badge"
+              >Completed: <span id="completedCount">0</span></span
+            >
+            <button
+              id="clearAllBtn"
+              class="thm-btn"
+              style="
+                padding: 0.1rem 0.5rem;
+                font-size: 0.7rem;
+                margin-left: auto;
+              "
+            >
+              Clear All
+            </button>
+          </div>
+
+          <div class="search-filters">
+            <input type="text" id="searchBar" placeholder="Search tasks..." />
+            <select id="filterCategory" style="width: 140px">
+              <option value="all">All Categories</option>
+              <option value="Work">Work</option>
+              <option value="Personal">Personal</option>
+              <option value="Urgent">Urgent</option>
+            </select>
+          </div>
+
+          <div id="taskListContainer" class="task-list"></div>
+        </div>
+      </div>
+      <div class="card pipeline-section">
+        <h2>Browser Rendering Pipeline Architecture</h2>
+        <p
+          style="
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+          "
+        >
+          A structural map trace displaying how engines synthesize plain files
+          down into actual interactive screen matrices.
+        </p>
+
+        <div class="pipeline-container">
+          <div class="pipeline-step">
+            <strong>1. HTML Parsing & Tokenization</strong>
+            <p style="font-size: 0.8rem; color: var(--text-secondary)">
+              The engine breaks down stream bytes into structured tokens via
+              lexical analysis rules ($&lt;$, tag names, attributes).
+            </p>
+          </div>
+          <div class="pipeline-step">
+            <strong>2. DOM Tree Generation</strong>
+            <p style="font-size: 0.8rem; color: var(--text-secondary)">
+              Tokens convert into full JavaScript operational Node Objects
+              linked hierarchically within an active parent/child tree schema.
+            </p>
+          </div>
+          <div class="pipeline-step">
+            <strong>3. CSSOM Tree Structuring</strong>
+            <p style="font-size: 0.8rem; color: var(--text-secondary)">
+              Engine discovers style targets, evaluating cascading rule matrices
+              to assign compute maps containing accurate structural weights per
+              node selector.
+            </p>
+          </div>
+          <div class="pipeline-step">
+            <strong>4. Render Tree Synthesis</strong>
+            <p style="font-size: 0.8rem; color: var(--text-secondary)">
+              DOM and CSSOM maps link together. Hidden objects (`display: none`)
+              are scrubbed out, leaving only physical nodes ready for positional
+              computation layout calculations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
